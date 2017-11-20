@@ -1,0 +1,138 @@
+/*
+ Theme Name:   Queencraft
+ Theme URI:    http://theoperaqueen.com
+ Description:  Child theme for Lovecraft
+ Author:       Aram Zucker-Scharff
+ Author URI:   http://aramzs.github.io
+ Template:     lovecraft
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         blog, two-columns, right-sidebar, custom-colors, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
+ Text Domain:  queencraft
+*/
+
+h2.blog-title {
+	font-size: 3.25em;
+	line-height: 50%;
+	letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    h2.blog-title {
+        font-size: 1.5em;
+				line-height: 1.2em;
+				letter-spacing: 1px;
+    }
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+    margin: 0px 10px;
+    display: inline-block;
+    position: relative;
+    width: 46px;
+    height: auto;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 2px 0px 6px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.talk-bubble a {
+    border: 0;
+}
+
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -20px;
+	right: auto;
+    top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightgrey lightgrey transparent transparent;
+}
+
+.tri-right.btm-right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: 38px;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightgrey lightgrey transparent transparent;
+}
+
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: -8px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 32px solid;
+	border-color: transparent transparent transparent #666;
+}
+.tri-right.btm-left:after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 10px;
+    right: auto;
+    top: auto;
+    bottom: -8px;
+    border: 10px solid;
+    border-color: transparent transparent transparent lightgrey;
+}
+
+/*Right triangle, placed bottom left side slightly in*/
+.tri-right.border.btm-left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  right: auto;
+  top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;
+}
+.tri-right.btm-left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  right: auto;
+  top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: lightgrey transparent transparent lightgrey;
+}
+
+.talk-round{
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+
+}
+
+/* talk bubble contents */
+.talktext{
+  padding: 1em;
+	text-align: left;
+  line-height: 1.5em;
+}
