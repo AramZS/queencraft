@@ -35,7 +35,10 @@
 				<?php if (has_category()) : ?>
 					<p class="post-categories"><span><?php _e('In','lovecraft'); ?> </span><?php the_category(', '); ?></p>
 				<?php endif; ?>
-				<?php edit_post_link('Edit', '<p>', '</p>'); ?>
+				<?php edit_post_link('Edit', '<p>', '</p>');
+					$comments_count = wp_count_comments(get_the_ID());
+					if ($comments_count->approved > 0){
+					?>
 				<div class="comment-preview comment-preview talk-bubble tri-right talk-round btm-left">
 					<div class="">
 						<a href="<?php comments_link(); ?>">
@@ -45,6 +48,9 @@
 						</a>
 					</div>
 				</div>
+					<?php
+					}
+					?>
 		    </div>
 
 		</div> <!-- /post-header -->
